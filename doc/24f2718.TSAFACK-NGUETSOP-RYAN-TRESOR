@@ -1,1 +1,40 @@
+Ce programme C a été conçu pour la gestion interactive d'une liste chaînée simple et triée. En utilisant des pointeurs, la liste stocke des nombres entiers qui sont automatiquement insérés dans l'ordre croissant, garantissant ainsi que la structure reste toujours classée.
 
+L'utilisateur commence par spécifier le nombre d'éléments à insérer. Ensuite, un menu principal est présenté, permettant de choisir entre afficher l'état actuel de la liste, ajouter de nouveaux éléments (qui seront triés à la volée), ou quitter le programme. L'utilisation d'une allocation dynamique de mémoire (avec malloc et free) assure une gestion efficace de la taille de la liste, et la fonction liberer_liste garantit qu'aucune fuite de mémoire ne survient à la fin de l'exécution.
+
+Ce code est un excellent exemple des fondamentaux des structures de données dynamiques en C.
+Lignes	Ét Description
+1-3	Inclut les bibliothèques standard pour les entrées/sorties (stdio.h) et l'allocation de mémoire (stdlib.h)
+
+5-9	Définit la structure de base d'un nœud de la liste. Elle contient un entier (valeur) et un pointeur vers la cellule suivante (suivant).
+
+11	Crée un alias (Liste) pour un pointeur de type cellule. Ceci représente la tête de la liste.
+
+13	Fonctions	Déclare le prototype de la fonction saisir_elements, qui est utilisée pour encapsuler la logique de saisie de plusieurs nombres.
+
+14	Liste creer_liste_vide()	Prototype de la fonction d'initialisation de la liste.
+
+15	Liste inserer_trie(...)	Prototype de la fonction d'insertion, garantissant l'ordre trié.
+
+16	void afficher_liste(...)	Prototype de la fonction d'affichage du contenu de la liste.
+
+17	void liberer_liste(...)	Prototype de la fonction de libération de la mémoire.
+
+18	void saisir_elements(...)	Prototype de la fonction de saisie interactive des éléments.
+
+Fonction Principale (main) et Menu Interactif (Lignes 102-159)
+
+Ce bloc contient le flux d'exécution principal du programme.
+
+    Initialisation (L. 103-112) : Crée une liste vide, initialise les variables et gère la saisie initiale des éléments demandée par l'utilisateur.
+
+    Boucle de Menu (L. 114-153) : Utilise une boucle do-while qui continue tant que l'utilisateur ne choisit pas l'option 3 (Quitter).
+
+        Affichage du Menu (L. 115-126) : Affiche la liste actuelle et les options du menu.
+
+        Gestion des Choix (L. 132-151) : Utilise une instruction switch pour exécuter l'action correspondante (Afficher, Ajouter en appelant saisir_elements, ou Quitter).
+
+    Nettoyage Final (L. 155-157) : Appelle liberer_liste pour nettoyer la mémoire avant que le programme ne se termine.
+pour executer ce code dans la distribution linux ubuntu il faut entrer dans le terminal et aller jusqu au dossier contenant le code puis y inserer les commandes suivantes :
+gcc liste_triee.c -o liste_triee
+./liste_triee
