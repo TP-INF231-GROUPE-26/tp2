@@ -1,0 +1,27 @@
+
+##COMPTE RENDU : insérer un élément en tête et en queue d’une liste simplement chainée circulaire.
+
+### 1. INTRODUCTION
+Il m'a été donne pour le compte de ce travail pratique de travail sur un programme permettant d'insérer en tête 
+et insérer en queue un élément dans une liste simplement chainée circulaire.
+
+### 2. FONCTIONNEMENT DU PROGRAMME
+
+Le programme comporte trois fonctions en plus de la fonction principale MAIN.
+Je me suis permise de déclarer premièrement les fonctions avant de les définir en fin de code.
+
+     ## a. Inserttete
+  C'est la fonction d'insertion en tête. Elle prend en paramètre le nombre d'élément
+a insérer et la liste ou ils seront stockes.
+     ## b. la fonction inserequeu. 
+  Comme son nom l'indique insère tous les éléments entre en fin de liste. 
+     ## c. afficheListe
+   Pour finir la fonction affiche liste qui
+permet d'afficher l'ensemble des valeur de la liste. Notons que les éléments ici sont des entiers.
+    ## d. La fonction principale
+  Dans le Main, le système fonctionne de tel en sorte qu'il nous ait demandé de combien d'élément 
+nous souhaitons enregistrer puis de choisir si l'on voudrait le faire en tête de liste ou en queue.
+
+### 3. CONCLUSION
+Le programme ici présenté s'exécute et se compile comme prévu tout en faisant ce pourquoi il a été 
+conçu.
