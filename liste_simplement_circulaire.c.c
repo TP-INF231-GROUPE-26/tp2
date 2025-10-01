@@ -8,9 +8,9 @@ typedef struct cellule {
 
 typedef cellule* Liste;
 
-void InsertHead(int n, Liste *l);
-void InsertTail(int n, Liste *l);
-void PrintList(Liste l, int n);
+void Inserttete(int n, Liste *l);
+void Insertqueu(int n, Liste *l);
+void afficheListe(Liste l, int n);
 
 int main() {
     int n, m;
@@ -23,17 +23,17 @@ int main() {
     scanf("%d", &m);
 
     if (m == 1) {
-        InsertHead(n, &l);
+        Inserttete(n, &l);
     } else {
-        InsertTail(n, &l);
+        Insertqueu(n, &l);
     }
 
-    PrintList(l, n);
+    afficheListe(l, n);
 
     return 0;
 }
 
-void InsertHead(int n, Liste *l) {
+void Inserttete(int n, Liste *l) {
     int i, x;
     for (i = 0; i < n; i++) {
         printf("\nEntrer la valeur %d : ", i + 1);
@@ -57,7 +57,7 @@ void InsertHead(int n, Liste *l) {
     }
 }
 
-void InsertTail(int n, Liste *l) {
+void Insertqueu(int n, Liste *l) {
     int i, x;
     for (i = 0; i < n; i++) {
         printf("\nEntrer la valeur %d : ", i + 1);
@@ -80,7 +80,7 @@ void InsertTail(int n, Liste *l) {
     }
 }
 
-void PrintList(Liste l, int n) {
+void afficheListe(Liste l, int n) {
     if (l == NULL) return;
 
     printf("\nVoici les valeurs que vous avez saisies :\n");
@@ -92,3 +92,4 @@ void PrintList(Liste l, int n) {
         i++;
     } while (t != l && i < n);
 }
+
