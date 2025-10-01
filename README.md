@@ -1,6 +1,4 @@
-==============================================================
-            ## README – Projets de Listes en C
-==============================================================
+## README 6 - PROJETS EN LISTES CHAINNEES.
 
 Ce dossier contient 5 programmes en langage C illustrant différentes structures de données linéaires (listes chaînées). 
 Chaque programme met en évidence une variante de liste et des opérations possibles pouvant être éffectuées. 
